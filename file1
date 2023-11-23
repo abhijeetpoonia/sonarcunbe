@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name 13.235.135.168;
+    root /etc/website;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
